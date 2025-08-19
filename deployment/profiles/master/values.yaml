@@ -1,0 +1,11 @@
+ingress_external:
+  enabled: false
+  host: client-ui.master.squads-dev.com
+
+ingress_restricted:
+  enabled: true
+  host: client-ui.master.squads-dev.com
+
+virtualservice_restricted:
+  enabled: false
+  host: use1-master-client-ui.percipio.com
