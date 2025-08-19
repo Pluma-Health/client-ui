@@ -1,0 +1,12 @@
+ingress_external:
+  enabled: false
+  host: client-ui.dev.squads-dev.com
+
+ingress_restricted:
+  enabled: true
+  host: client-ui.dev.squads-dev.com
+
+virtualservice_restricted:
+  enabled: false
+  host: manifest_not_included_in_this_profile
+  
