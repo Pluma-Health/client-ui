@@ -1,0 +1,13 @@
+#DOCUMENTATION: https://skillsoftdev.atlassian.net/wiki/x/AYB-y
+harnessServiceName: client-ui
+includeCDTests: [UI,BFF,BE]
+podAnnotations:
+  jiraKey: VOY
+  repo: https://github.skillsoft.com/Pluma-Health/client-ui
+  squad: VOY
+runCDTests: false
+slackNotificationChannel: VOY-squad
+deploymentHealthAuthType: basic
+# Attention!  You must request this secret and make your service accept the credentials. JWT is also supported.
+deploymentHealthUsername: client-ui-username-<+env.name>
+deploymentHealthPassword: client-ui-password-<+env.name>
